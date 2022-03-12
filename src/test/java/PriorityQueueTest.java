@@ -31,10 +31,12 @@ public class PriorityQueueTest {
         for(Integer value:random_array){
             test.add(value);
         }
-        /*
+        int x = 0;
+        String y = "";
+        y = x;
         for(int i = 0;i < random_array.length;i++){
             result[i] = test.poll();
-        }*/
+        }
         //System.out.println(Arrays.toString(result));
         //System.out.println(Arrays.toString(correct_array));
 

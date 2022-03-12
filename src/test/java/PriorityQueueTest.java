@@ -31,9 +31,6 @@ public class PriorityQueueTest {
         for(Integer value:random_array){
             test.add(value);
         }
-        int x = 0;
-        String y = "";
-        y = x;
         for(int i = 0;i < random_array.length;i++){
             result[i] = test.poll();
         }
@@ -53,7 +50,7 @@ public class PriorityQueueTest {
     @Test
     public void whenExceptionThrown_testIllegalArgumentException(){
         Exception exception  = assertThrows(IllegalArgumentException.class, () -> {
-            PriorityQueue<Integer> test = new PriorityQueue<Integer>(-1);
+            //PriorityQueue<Integer> test = new PriorityQueue<Integer>(-1);
         });
 
     }

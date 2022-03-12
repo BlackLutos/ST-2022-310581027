@@ -14,11 +14,11 @@ import java.util.stream.Stream;
 public class PriorityQueueTest {
     static Stream<Arguments> streamProvider(){
         return Stream.of(
-                Arguments.of(new int[]{8,3,4},new int[]{3,4,7}),
-                Arguments.of(new int[]{-6,-1,-8,5},new int[]{-8,-6,-1,4}),
-                Arguments.of(new int[]{7,-2,-4,-1,8},new int[]{-4,-2,-1,7,7}),
-                Arguments.of(new int[]{3,1,-6,0,9,4},new int[]{-6,0,1,3,4,8}),
-                Arguments.of(new int[]{2,7,3,-1,-5},new int[]{-5,-1,2,3,6})
+                Arguments.of(new int[]{8,3,4},new int[]{3,4,8}),
+                Arguments.of(new int[]{-6,-1,-8,5},new int[]{-8,-6,-1,5}),
+                Arguments.of(new int[]{7,-2,-4,-1,8},new int[]{-4,-2,-1,7,8}),
+                Arguments.of(new int[]{3,1,-6,0,9,4},new int[]{-6,0,1,3,4,9}),
+                Arguments.of(new int[]{2,7,3,-1,-5},new int[]{-5,-1,2,3,7})
         );
     }
     @ParameterizedTest(name="#(index) - Test with Arugment={0},{1}")
